@@ -1,0 +1,1 @@
+SELECT name FROM user JOIN post USING (user_id) GROUP BY user_id ORDER BY COUNT(post_id) DESC LIMIT 10;
